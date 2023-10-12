@@ -42,6 +42,26 @@ a {
 
 /*-- Helper Class --*/
 
+/*-- Component --*/
+
+.btn{
+    display: block;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    color: var(--white);
+    background-color: var(--dark);
+    width: 18rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Roboto-Medium';
+}
 /*-- App Style --*/
 
 .header {
@@ -49,7 +69,7 @@ a {
         url(../images/header-bg.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 55rem;
+    min-height: 80vh;
     border-bottom-left-radius: 9rem;
     border-bottom-right-radius: 9rem;
 }
@@ -258,4 +278,28 @@ a {
     -moz-transform: translateY(-8px) rotate(-45deg);
     -ms-transform: translateY(-8px) rotate(-45deg);
     -o-transform: translateY(-8px) rotate(-45deg);
+}
+
+/* --Hero-- */
+
+.hero{
+    text-align: center;
+    margin-top: 6rem;
+}
+.hero__tittle{
+    font-family: 'Archivo-Black';
+    color: var(--second-white);
+    font-size: 5rem;
+    line-height: 1.2;
+    max-width: 35rem;
+    margin: 0 auto 3rem auto;
+}
+.hero__text{
+    color: var(--white);
+    font-size: 1.8rem;
+    max-width: 34rem;
+    margin: 0 auto 2rem auto;
+}
+.hero__button{
+    background-color: var(--orange);
 }
