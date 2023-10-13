@@ -165,6 +165,15 @@ a {
     -o-transition: var(--tr);
 }
 
+.nav-menu__tittle {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: Archivo-Black;
+    border-bottom: 0.1rem solid var(--white);
+    padding-bottom: 1.3rem;
+    margin-bottom: 2rem;
+}
+
 .mobile-menu {
     margin-bottom: 3rem;
 }
