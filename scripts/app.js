@@ -4,6 +4,8 @@ const navBtn = $.querySelector('.nav__btn');
 const navMenu = $.querySelector('.nav-menu');
 let isOpen = false
 
+// mobile button action
+
 navBtn.addEventListener('click', () => {
     if (isOpen) {
         navBtn.classList.remove('nav__btn--open')

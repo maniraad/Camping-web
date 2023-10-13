@@ -156,7 +156,7 @@ a {
     left: -25rem;
     bottom: 0;
     width: 25rem;
-    background-color: #343434;
+    background-color: var(--dark);
     padding: 2.5rem;
     transition: var(--tr);
     -webkit-transition: var(--tr);
@@ -175,6 +175,69 @@ a {
 
 .mobile-menu__link {
     color: var(--white);
+    position: relative;
+    transition: var(--tr);
+    -webkit-transition: var(--tr);
+    -moz-transition: var(--tr);
+    -ms-transition: var(--tr);
+    -o-transition: var(--tr);
+}
+
+.mobile-menu__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: 0.3rem;
+    background-color: var(--orange);
+    transition: var(--tr);
+    -webkit-transition: var(--tr);
+    -moz-transition: var(--tr);
+    -ms-transition: var(--tr);
+    -o-transition: var(--tr);
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+}
+
+.mobile-menu__link:hover {
+    padding-left: 2.1rem;
+    transition: var(--tr);
+    -webkit-transition: var(--tr);
+    -moz-transition: var(--tr);
+    -ms-transition: var(--tr);
+    -o-transition: var(--tr);
+}
+
+.mobile-menu__link:hover::before {
+    width: 1.6rem;
+    transition: var(--tr);
+    -webkit-transition: var(--tr);
+    -moz-transition: var(--tr);
+    -ms-transition: var(--tr);
+    -o-transition: var(--tr);
+}
+
+.mobile-menu__link--active {
+    position: relative;
+    padding-left: 2.1rem;
+}
+
+.mobile-menu__link--active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1.6rem;
+    height: 0.3rem;
+    background-color: var(--orange);
 }
 
 .nav-menu__links {
