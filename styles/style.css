@@ -4,7 +4,10 @@
     --second-white: #eee;
     --grey: #d2d2d2;
     --dark: #3b3735;
-    --tr: all 0.3s ease-in-out
+    --tr: all 0.3s ease-in-out;
+    --primary-font: Roboto-Regular;
+    --primary-font-md:Roboto-Medium;
+    --secondary-font:Archivo-Black;
 }
 
 html {
@@ -20,7 +23,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: var(--primary-font);
     line-height: 1.6;
     font-size: 1.6rem;
 }
@@ -60,7 +63,7 @@ a {
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    font-family: 'Roboto-Medium';
+    font-family: var(--primary-font-md);
 }
 
 /*-- App Style --*/
@@ -124,7 +127,7 @@ a {
 .menu__link--active {
     color: var(--white);
     position: relative;
-    font-family: 'Roboto-Medium';
+    font-family: var(--primary-font-md);
     z-index: 5;
 }
 
@@ -168,7 +171,7 @@ a {
 .nav-menu__tittle {
     color: var(--white);
     font-size: 2rem;
-    font-family: Archivo-Black;
+    font-family: var(--secondary-font);
     border-bottom: 0.1rem solid var(--white);
     padding-bottom: 1.3rem;
     margin-bottom: 2rem;
@@ -269,7 +272,7 @@ a {
 
 .header__link {
     color: var(--second-white);
-    font-family: 'Roboto-Medium';
+    font-family: var(--primary-font-md);
     padding: 1.3rem 3rem;
 }
 
@@ -371,7 +374,7 @@ a {
 }
 
 .hero__tittle {
-    font-family: 'Archivo-Black';
+    font-family: var(--secondary-font);
     color: var(--second-white);
     font-size: 5rem;
     line-height: 1.2;
