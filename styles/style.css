@@ -4,10 +4,11 @@
     --second-white: #eee;
     --grey: #d2d2d2;
     --dark: #3b3735;
+    --bgColor: #FAF4F2;
     --tr: all 0.3s ease-in-out;
     --primary-font: Roboto-Regular;
-    --primary-font-md:Roboto-Medium;
-    --secondary-font:Archivo-Black;
+    --primary-font-md: Roboto-Medium;
+    --secondary-font: Archivo-Black;
 }
 
 html {
@@ -26,6 +27,7 @@ body {
     font-family: var(--primary-font);
     line-height: 1.6;
     font-size: 1.6rem;
+    background: var(--bgColor);
 }
 
 .container {
@@ -73,7 +75,7 @@ a {
         url(../images/header-bg.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 85vh;
     border-bottom-left-radius: 9rem;
     border-bottom-right-radius: 9rem;
 }
@@ -391,4 +393,49 @@ a {
 
 .hero__button {
     background-color: var(--orange);
+}
+
+/* --start main-- */
+.main {}
+
+/* --services-- */
+.services {
+    text-align: center;
+    margin-top: -10rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
+.service {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 4rem;
+    width: 31rem;
+    height: 26rem;
+    border-radius: 1.8rem;
+    -webkit-border-radius: 1.8rem;
+    -moz-border-radius: 1.8rem;
+    -ms-border-radius: 1.8rem;
+    -o-border-radius: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.service__image {
+    display: block;
+}
+
+.service__tittle {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin: 1.5rem 0 0.6rem 0;
 }

@@ -1,7 +1,10 @@
-
 @media screen and (min-width:576px) {
     .container {
         width: 54rem;
+    }
+
+    .services {
+        margin-top: -14rem;
     }
 }
 
@@ -9,12 +12,14 @@
     .container {
         width: 72rem;
     }
+
     .nav__btn,
-    .nav-menu{
+    .nav-menu {
         display: none;
     }
-    .menu{
-        display:flex;
+
+    .menu {
+        display: flex;
     }
 }
 
@@ -22,10 +27,12 @@
     .container {
         width: 96rem;
     }
-    .header__links{
+
+    .header__links {
         display: block;
     }
-    .hero__text{
+
+    .hero__text {
         max-width: 50rem;
     }
 }
