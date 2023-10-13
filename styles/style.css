@@ -197,46 +197,6 @@ a {
     -o-transition: var(--tr);
 }
 
-.mobile-menu__link::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 0;
-    height: 0.3rem;
-    background-color: var(--orange);
-    transition: var(--tr);
-    -webkit-transition: var(--tr);
-    -moz-transition: var(--tr);
-    -ms-transition: var(--tr);
-    -o-transition: var(--tr);
-    border-radius: 10rem;
-    -webkit-border-radius: 10rem;
-    -moz-border-radius: 10rem;
-    -ms-border-radius: 10rem;
-    -o-border-radius: 10rem;
-}
-
-.mobile-menu__link:hover {
-    padding-left: 2.1rem;
-    transition: var(--tr);
-    -webkit-transition: var(--tr);
-    -moz-transition: var(--tr);
-    -ms-transition: var(--tr);
-    -o-transition: var(--tr);
-}
-
-.mobile-menu__link:hover::before {
-    width: 1.6rem;
-    transition: var(--tr);
-    -webkit-transition: var(--tr);
-    -moz-transition: var(--tr);
-    -ms-transition: var(--tr);
-    -o-transition: var(--tr);
-}
-
 .mobile-menu__link--active {
     position: relative;
     padding-left: 2.1rem;
@@ -438,4 +398,71 @@ a {
     font-family: var(--secondary-font);
     font-size: 1.8rem;
     margin: 1.5rem 0 0.6rem 0;
+}
+
+/* --Destinations-- */
+
+.destinations{
+    text-align: center;
+    padding: 6rem 0;
+}
+.destinations__img{
+
+}
+.destinations__tittle{
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    max-width: 30rem;
+    margin: 3rem auto;
+    color: var(--dark);
+}
+.destinations__posts{
+
+}
+.post{
+
+}
+.post__banner{
+
+}
+.post__image{
+
+}
+.post__like{
+
+}
+.post__price{
+
+}
+.post__price-text{
+
+}
+.post__tittle{
+
+}
+.post__caption{
+
+}
+.post__btn{
+
+}
+.destinations__btn{
+    color: var(--orange);
+    border: 0.1rem solid var(--orange);
+    background: transparent;
+    margin-top: 3rem;
+    transition: var(--tr);
+    -webkit-transition: var(--tr);
+    -moz-transition: var(--tr);
+    -ms-transition: var(--tr);
+    -o-transition: var(--tr); 
+}
+.destinations__btn:hover{
+    color: var(--second-white);
+    background-color: var(--orange);
+    transition: var(--tr);
+    -webkit-transition: var(--tr);
+    -moz-transition: var(--tr);
+    -ms-transition: var(--tr);
+    -o-transition: var(--tr);
 }
