@@ -394,3 +394,48 @@ a {
 .hero__button {
     background-color: var(--orange);
 }
+
+/* --start main-- */
+.main {}
+
+/* --services-- */
+.services {
+    text-align: center;
+    margin-top: -10rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
+.service {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 4rem;
+    width: 31rem;
+    height: 26rem;
+    border-radius: 1.8rem;
+    -webkit-border-radius: 1.8rem;
+    -moz-border-radius: 1.8rem;
+    -ms-border-radius: 1.8rem;
+    -o-border-radius: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.service__image {
+    display: block;
+}
+
+.service__tittle {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin: 1.5rem 0 0.6rem 0;
+}
