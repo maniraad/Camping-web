@@ -1,9 +1,10 @@
 :root {
-    --orange: #E76F51;
+    --primary-color: #E76F51;
+    --secondary-color:#F8E1DB;
     --white: #fff;
-    --second-white: #eee;
+    --secondary-white: #eee;
     --grey: #d2d2d2;
-    --dark: #3b3735;
+    --text-color: #3b3735;
     --bgColor: #FAF4F2;
     --tr: all 0.3s ease-in-out;
     --primary-font: Roboto-Regular;
@@ -57,7 +58,7 @@ a {
     -ms-border-radius: 10rem;
     -o-border-radius: 10rem;
     color: var(--white);
-    background-color: var(--dark);
+    background-color: var(--text-color);
     width: 18rem;
     height: 5rem;
     display: flex;
@@ -139,7 +140,7 @@ a {
     width: 4rem;
     height: 0.3rem;
     border-radius: 3rem;
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     transform: translateY(10px) rotate(45deg);
     z-index: -1;
 }
@@ -161,7 +162,7 @@ a {
     left: -25rem;
     bottom: 0;
     width: 25rem;
-    background-color: var(--dark);
+    background-color: var(--text-color);
     padding: 2.5rem;
     transition: var(--tr);
     -webkit-transition: var(--tr);
@@ -211,7 +212,7 @@ a {
     margin: auto;
     width: 1.6rem;
     height: 0.3rem;
-    background-color: var(--orange);
+    background-color: var(--primary-color);
 }
 
 .nav-menu__links {
@@ -233,13 +234,13 @@ a {
 }
 
 .header__link {
-    color: var(--second-white);
+    color: var(--secondary-white);
     font-family: var(--primary-font-md);
     padding: 1.3rem 3rem;
 }
 
 .header__link--border {
-    border: 1px solid var(--second-white);
+    border: 1px solid var(--secondary-white);
     border-radius: 10rem;
     transition: var(--tr);
     -webkit-transition: var(--tr);
@@ -250,7 +251,7 @@ a {
 
 .header__link--border:hover {
     background-color: var(--white);
-    color: var(--dark);
+    color: var(--text-color);
     transition: var(--tr);
     -webkit-transition: var(--tr);
     -moz-transition: var(--tr);
@@ -276,7 +277,7 @@ a {
 }
 
 .nav__btn-line {
-    background: var(--orange);
+    background: var(--primary-color);
     width: 2.8rem;
     height: 0.3rem;
     display: block;
@@ -288,7 +289,7 @@ a {
 .nav__btn-line::before {
     content: '';
     position: absolute;
-    background: var(--orange);
+    background: var(--primary-color);
     width: 2.8rem;
     height: 0.3rem;
     display: block;
@@ -337,7 +338,7 @@ a {
 
 .hero__tittle {
     font-family: var(--secondary-font);
-    color: var(--second-white);
+    color: var(--secondary-white);
     font-size: 5rem;
     line-height: 1.2;
     max-width: 35rem;
@@ -352,7 +353,7 @@ a {
 }
 
 .hero__button {
-    background-color: var(--orange);
+    background-color: var(--primary-color);
 }
 
 /* --start main-- */
@@ -383,7 +384,7 @@ a {
     -moz-border-radius: 1.8rem;
     -ms-border-radius: 1.8rem;
     -o-border-radius: 1.8rem;
-    color: var(--dark);
+    color: var(--text-color);
     margin-bottom: 2rem;
     text-align: center;
     margin-right: 1rem;
@@ -407,14 +408,12 @@ a {
     padding: 6rem 0;
 }
 
-.destinations__img {}
-
 .destinations__tittle {
     font-family: var(--secondary-font);
     font-size: 2.5rem;
     max-width: 30rem;
     margin: 3rem auto;
-    color: var(--dark);
+    color: var(--text-color);
 }
 
 .destinations__posts {
@@ -432,7 +431,7 @@ a {
     -moz-border-radius: 1.8rem;
     -ms-border-radius: 1.8rem;
     -o-border-radius: 1.8rem;
-    color: var(--dark);
+    color: var(--text-color);
     margin-bottom: 2rem;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -476,7 +475,7 @@ a {
 }
 
 .post__like-icon {
-    fill: var(--orange);
+    fill: var(--primary-color);
 }
 
 .post__price {
@@ -499,7 +498,7 @@ a {
 .post__price-text {
     font-family: var(--primary-font-md);
     text-align: center;
-    color: var(--orange);
+    color: var(--primary-color);
 }
 
 .post__tittle {
@@ -519,8 +518,8 @@ a {
 }
 
 .destinations__btn {
-    color: var(--orange);
-    border: 0.1rem solid var(--orange);
+    color: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
     background: transparent;
     margin-top: 3rem;
     transition: var(--tr);
@@ -531,11 +530,89 @@ a {
 }
 
 .destinations__btn:hover {
-    color: var(--second-white);
-    background-color: var(--orange);
+    color: var(--secondary-white);
+    background-color: var(--primary-color);
     transition: var(--tr);
     -webkit-transition: var(--tr);
     -moz-transition: var(--tr);
     -ms-transition: var(--tr);
     -o-transition: var(--tr);
 }
+
+/* --NewsLetter-- */
+
+.newsletter{
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3rem 2rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.8rem;
+    -webkit-border-radius: 1.8rem;
+    -moz-border-radius: 1.8rem;
+    -ms-border-radius: 1.8rem;
+    -o-border-radius: 1.8rem;
+}
+.newsletter__content{
+    color: var(--text-color);
+}
+.newsletter__tittle{
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    max-width: 16rem;
+    margin: 1.5rem auto;
+}
+.newsletter__caption{
+    font-family: var(--primary-font-md);
+}
+.newsletter__email-box{
+    height: 7rem;
+    background: var(--white);
+    padding: 0 1rem 0 1.5rem;
+    border-radius: 1.8rem;
+    -webkit-border-radius: 1.8rem;
+    -moz-border-radius: 1.8rem;
+    -ms-border-radius: 1.8rem;
+    -o-border-radius: 1.8rem;
+}
+.newsletter__form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.newsletter__email-icon{
+    flex-shrink: 0;
+}
+.newsletter__input{
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: #8d8d8d;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+}
+.newsletter__email-btn{
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.newsletter__banner{
+
+}
+.newsletter__img{
+    width: 100%;
+} 
