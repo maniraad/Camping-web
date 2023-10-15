@@ -2,6 +2,10 @@
     .hero__tittle {
         font-size: 4rem;
     }
+
+    .newsletter__tittle {
+        max-width: 16rem;
+    }
 }
 
 @media screen and (min-width:410px) {
@@ -18,6 +22,7 @@
     .container {
         width: 54rem;
     }
+
 }
 
 @media screen and (min-width:768px) {
@@ -33,6 +38,21 @@
     .menu {
         display: flex;
     }
+
+    .newsletter {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+
+    .newsletter__content {
+        flex-basis: 60%;
+        padding-right: 2rem;
+    }
+
+    .newsletter__banner {
+        flex-basis: 40%;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -47,16 +67,38 @@
     .hero__text {
         max-width: 50rem;
     }
+
+    .newsletter__content {
+        padding-right: 4rem;
+    }
 }
 
 @media screen and (min-width:1200px) {
     .container {
         width: 114rem;
     }
+
+    .newsletter {
+        justify-content: space-between;
+    }
+
+    .newsletter__content {
+        flex-basis: auto;
+        width: 60rem;
+    }
+
+    .newsletter__banner {
+        flex-basis: auto;
+        width: 42rem;
+    }
 }
 
 @media screen and (min-width:1400px) {
     .container {
         width: 137rem;
+    }
+
+    .newsletter {
+        padding: 3rem 6rem;
     }
 }
