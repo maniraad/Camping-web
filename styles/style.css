@@ -375,7 +375,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    padding: 0 4rem;
+    padding: 0 2rem;
     width: 31rem;
     height: 26rem;
     border-radius: 1.8rem;
@@ -417,18 +417,27 @@ a {
     color: var(--dark);
 }
 
-.destinations__posts {}
+.destinations__posts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
 
 .post {
     border-radius: 1.8rem;
     background: #fff;
-    padding: 3rem;
+    padding: 2rem;
     -webkit-border-radius: 1.8rem;
     -moz-border-radius: 1.8rem;
     -ms-border-radius: 1.8rem;
     -o-border-radius: 1.8rem;
     color: var(--dark);
     margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 31rem;
+    flex-grow: 1;
 }
 
 .post__banner {
@@ -451,8 +460,8 @@ a {
 .post__like {
     position: absolute;
     display: flex;
-    top: 1rem;
-    right: 1rem;
+    top: 1.5rem;
+    right: 1.5rem;
     align-items: center;
     justify-content: center;
     width: 4rem;
@@ -466,7 +475,9 @@ a {
     -o-border-radius: 1.3rem;
 }
 
-.place__like-icon {}
+.post__like-icon {
+    fill: var(--orange);
+}
 
 .post__price {
     background-color: var(--white);
@@ -478,11 +489,11 @@ a {
     margin: 0 auto;
     left: 0;
     right: 0;
-    border-radius:1.3rem ;
-    -webkit-border-radius:1rem ;
-    -moz-border-radius:1rem ;
-    -ms-border-radius:1rem ;
-    -o-border-radius:1rem ;
+    border-radius: 1.3rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 .post__price-text {
@@ -495,6 +506,7 @@ a {
     font-family: var(--secondary-font);
     margin-top: 3rem;
     margin-bottom: .5rem;
+    font-size: 1.8rem;
 }
 
 .post__caption {
@@ -502,8 +514,8 @@ a {
 }
 
 .post__btn {
-    color: rgb(141, 141, 141,100);
-    background: rgba(141, 141, 141,0.1);
+    color: rgb(141, 141, 141, 100);
+    background: rgba(141, 141, 141, 0.1);
 }
 
 .destinations__btn {
