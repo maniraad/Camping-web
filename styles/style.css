@@ -30,6 +30,7 @@ body {
     line-height: 1.6;
     font-size: 1.6rem;
     background: var(--bgColor);
+    overflow-x: hidden;
 }
 
 .container {
@@ -407,8 +408,29 @@ a {
 .destinations {
     text-align: center;
     padding: 6rem 0;
+    color: var(--text-color);
+    position: relative;
 }
-
+.destinations::after,
+.destinations::before{
+    content: '';
+    position: absolute;
+    width: 60rem;
+    height: 60rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.destinations::after{
+    background-image: url(../images/svgs/shape1.svg);
+    right: -39rem;
+    top: -8rem;
+}
+.destinations::before{
+    background-image: url(../images/svgs/shape2.svg);
+    left: -45rem;
+    bottom: 40rem;
+}
 .destinations__tittle {
     font-family: var(--secondary-font);
     font-size: 2.5rem;
