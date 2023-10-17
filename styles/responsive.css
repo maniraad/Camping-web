@@ -35,7 +35,10 @@
     .container {
         width: 54rem;
     }
-
+    .newsletter::before {
+        top: 16rem;
+        left: -13rem;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -65,6 +68,14 @@
 
     .newsletter__banner {
         flex-basis: 40%;
+    }
+    .newsletter::before{
+        width: auto;
+        height: auto;
+        top: -5rem;
+        left: -59rem;
+        background-size: auto;
+        background-position: center left;
     }
 }
 
@@ -104,6 +115,10 @@
     .footer__scroll {
         left: auto;
     }
+    .newsletter::before{
+        top: -10rem;
+        left: -42rem;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -133,6 +148,10 @@
         margin-bottom: 0;
         margin-left: 2rem;
     }
+    .newsletter::before{
+        top: -4rem;
+        left: -31rem;
+    }
 }
 
 @media screen and (min-width:1400px) {
@@ -142,5 +161,9 @@
 
     .newsletter {
         padding: 3rem 6rem;
+    }
+    .newsletter::before{
+        top: -10rem;
+        left: -20rem;
     }
 }
