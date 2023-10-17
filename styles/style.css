@@ -661,6 +661,7 @@ a {
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    box-shadow: 2px 1px 10px rgba(231, 111, 81, 0.6);
 }
 
 .newsletter__img {
@@ -701,6 +702,7 @@ a {
     top: -2.5rem;
     left: 0;
     margin: 0 auto;
+    box-shadow: 2px 1px 10px rgb(59 55 53 0.05);
 }
 
 /* --footer left-- */
