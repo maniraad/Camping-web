@@ -1,3 +1,70 @@
+/* --Fonts-- */
+
+
+/* Roboto fonts */
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../Fonts/Roboto/Roboto-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../Fonts/Roboto/Roboto-Medium.ttf) format(truetype);
+}
+
+/* Archivo fonts */
+@font-face {
+    font-family: Archivo-Black;
+    src: url(../Fonts/Archivo/Archivo-Black.ttf) format(truetype);
+}
+
+/* --Reset-- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --Reset-- */
 :root {
     --primary-color: #E76F51;
     --secondary-color: #F8E1DB;
@@ -749,4 +816,178 @@ a {
     text-align: center;
     font-size: 1.4rem;
     margin-top: 2rem;
+}
+
+
+/* --Responsive-- */
+
+
+@media (max-width: 395px) {
+    .hero__tittle {
+        font-size: 4rem;
+    }
+
+    .newsletter__tittle {
+        max-width: 16rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer__right {
+        justify-content: center;
+    }
+
+    .footer-list {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:410px) {
+    .container {
+        width: 39rem;
+    }
+
+    .services {
+        margin-top: -14rem;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .container {
+        width: 54rem;
+    }
+    .newsletter::before {
+        top: 16rem;
+        left: -13rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        width: 72rem;
+    }
+
+    .nav__btn,
+    .nav-menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .newsletter {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+
+    .newsletter__content {
+        flex-basis: 60%;
+        padding-right: 2rem;
+    }
+
+    .newsletter__banner {
+        flex-basis: 40%;
+    }
+    .newsletter::before{
+        width: auto;
+        height: auto;
+        top: -5rem;
+        left: -59rem;
+        background-size: auto;
+        background-position: center left;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        width: 96rem;
+    }
+
+    .header__links {
+        display: block;
+    }
+
+    .hero__text {
+        max-width: 50rem;
+    }
+
+    .newsletter__content {
+        padding-right: 4rem;
+    }
+
+    .footer-app {
+        display: block;
+    }
+
+    .footer-app--mobile {
+        display: none;
+    }
+
+    .footer__wrapper {
+        display: flex;
+    }
+
+    .footer__left {
+        max-width: 50rem;
+    }
+
+    .footer__scroll {
+        left: auto;
+    }
+    .newsletter::before{
+        top: -10rem;
+        left: -42rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        width: 114rem;
+    }
+
+    .newsletter {
+        justify-content: space-between;
+    }
+
+    .newsletter__content {
+        flex-basis: auto;
+        width: 60rem;
+    }
+
+    .newsletter__banner {
+        flex-basis: auto;
+        width: 42rem;
+    }
+
+    .footer__wrapper {
+        justify-content: space-between;
+    }
+
+    .footer-list {
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
+    .newsletter::before{
+        top: -4rem;
+        left: -31rem;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .container {
+        width: 137rem;
+    }
+
+    .newsletter {
+        padding: 3rem 6rem;
+    }
+    .newsletter::before{
+        top: -10rem;
+        left: -20rem;
+    }
 }
