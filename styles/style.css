@@ -408,7 +408,7 @@ a {
 
 .hero__tittle {
     font-family: var(--secondary-font);
-    color: var(--secondary-white);
+    color: var(--white);
     font-size: 5rem;
     line-height: 1.2;
     max-width: 35rem;
