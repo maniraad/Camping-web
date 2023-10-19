@@ -179,6 +179,10 @@ html {
     box-sizing: inherit;
 }
 
+::selection{
+    background:#ff8e71cf;
+}
+
 body {
     font-family: var(--primary-font);
     line-height: 1.6;
