@@ -20,48 +20,135 @@
 
 /* --Reset-- */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* --Reset-- */
@@ -97,7 +184,7 @@ body {
     line-height: 1.6;
     font-size: 1.6rem;
     background: var(--bgColor);
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 .container {
@@ -415,6 +502,34 @@ a {
     margin: 0 auto 3rem auto;
 }
 
+/* .svg-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+   top: 50%;
+    left: 50%;
+    margin: 0 auto 3rem auto;
+}
+
+.svg-text path {
+    fill: none;
+    stroke: var(--white);
+    stroke-width: 4px;
+    stroke-dasharray: 600px;
+    stroke-dashoffset: 600px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: draw-stroke 5s ease-in-out forwards;
+    -webkit-animation: draw-stroke 5s ease-in-out forwards;
+}
+
+@keyframes draw-stroke {
+    100% {
+        stroke-dashoffset: 0;
+        fill: var(--white);
+        stroke: none;
+}
+} */
+
 .hero__text {
     color: var(--white);
     font-size: 1.8rem;
@@ -478,8 +593,9 @@ a {
     color: var(--text-color);
     position: relative;
 }
+
 .destinations::after,
-.destinations::before{
+.destinations::before {
     content: '';
     position: absolute;
     width: 60rem;
@@ -488,16 +604,19 @@ a {
     background-repeat: no-repeat;
     z-index: -1;
 }
-.destinations::after{
+
+.destinations::after {
     background-image: url(../images/svgs/shape1.svg);
     right: -39rem;
     top: -8rem;
 }
-.destinations::before{
+
+.destinations::before {
     background-image: url(../images/svgs/shape2.svg);
     left: -45rem;
     bottom: 40rem;
 }
+
 .destinations__tittle {
     font-family: var(--secondary-font);
     font-size: 2.5rem;
@@ -661,8 +780,8 @@ a {
     background-size: contain;
 }
 
-.newsletter__content ,
-.newsletter__banner{
+.newsletter__content,
+.newsletter__banner {
     z-index: 2;
 }
 
@@ -859,6 +978,7 @@ a {
     .container {
         width: 54rem;
     }
+
     .newsletter::before {
         top: 16rem;
         left: -13rem;
@@ -893,7 +1013,8 @@ a {
     .newsletter__banner {
         flex-basis: 40%;
     }
-    .newsletter::before{
+
+    .newsletter::before {
         width: auto;
         height: auto;
         top: -5rem;
@@ -939,7 +1060,8 @@ a {
     .footer__scroll {
         left: auto;
     }
-    .newsletter::before{
+
+    .newsletter::before {
         top: -10rem;
         left: -42rem;
     }
@@ -972,7 +1094,8 @@ a {
         margin-bottom: 0;
         margin-left: 2rem;
     }
-    .newsletter::before{
+
+    .newsletter::before {
         top: -4rem;
         left: -31rem;
     }
@@ -986,7 +1109,8 @@ a {
     .newsletter {
         padding: 3rem 6rem;
     }
-    .newsletter::before{
+
+    .newsletter::before {
         top: -10rem;
         left: -20rem;
     }
