@@ -193,6 +193,7 @@ body {
     padding-right: 1.5rem;
     margin-right: auto;
     margin-left: auto;
+    position: relative
 }
 
 
@@ -594,7 +595,6 @@ a {
     position: relative;
 }
 
-.destinations::after,
 .destinations::before {
     content: '';
     position: absolute;
@@ -603,12 +603,6 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
-}
-
-.destinations::after {
-    background-image: url(../images/svgs/shape1.svg);
-    right: -39rem;
-    top: -8rem;
 }
 
 .destinations::before {
