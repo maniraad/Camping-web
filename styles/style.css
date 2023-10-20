@@ -181,6 +181,7 @@ html {
 
 ::selection{
     background:#ff8e71cf;
+    color: #000;
 }
 
 body {
